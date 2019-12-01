@@ -6,12 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const priority = document.getElementById('priority');
   
   
-  function addLi(input) {
-    let uList = document.getElementById('tasks');
-    let element = document.createElement('li');
-    element.innerHTML = input;
-    uList.appendChild(element);
+  function list(input) {
+    let ul = document.getElementById('tasks');
+    let li = document.createElement('li');
+    li.innerHTML = input;
+    ul.appendChild(li);
   }
+  
   let a=document.body.querySelector("#create-task-form input[type='submit']")
   a.addEventListener("click", function (e) {
     e.preventDefault();
