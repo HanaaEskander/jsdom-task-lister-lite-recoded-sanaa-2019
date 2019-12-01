@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const tasks = document.getElementById("tasks");
   const priority = document.getElementById('priority');
 
-  form.addEventListener('submit',handleSubmition);
+  form.addEventListener('submit',formSubmit);
 
   function deleteTask(e){
     e.target.parentNode.parentNode.removeChild(e.target.parentNode);
   }
   
-  function handleSubmition(e){
+  function formSubmit(e){
     e.preventDefault();
     if(input.value != ""){
       let option = priority.options[priority.selectedIndex];
