@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   form.addEventListener('submit',formSubmit);
 
-  function deleteTask(e){
+  function rmvTask(e){
     e.target.parentNode.parentNode.removeChild(e.target.parentNode);
   }
   
