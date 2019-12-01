@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
     ul.appendChild(li);
   }
   
-  let a=document.body.querySelector("#create-task-form input[type='submit']")
-  a.addEventListener("click", function (e) {
-    e.preventDefault();
-    let input = document.getElementById('new-task-description').value;
-    addLi(input);
-    input.value = "";
+let a=document.body.getElementById("#create-task-form input[type='submit']")
+a.addEventListener("onClick", function (e) {
+e.preventDefault();
+let input = document.getElementById('new-task-description').value;
+list(input);
+input.value = "";
 
   });
 
