@@ -10,20 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function deleteTask(e){
     e.target.parentNode.parentNode.removeChild(e.target.parentNode);
   }
-
-
-  // function sortList(list){
-  //       let coll = [...list]
-  //       if(coll.length > 2){
-  //         coll.sort(function(a, b) {
-  //         let textA = a.getAttribute('data-sort').toLowerCase()
-  //         let textB = b.getAttribute('data-sort').toLowerCase()
-  //         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-  //       });
-  //       }
-  //   return coll;
-  // }
-
+  
   function handleSubmition(e){
     e.preventDefault();
     if(input.value != ""){
