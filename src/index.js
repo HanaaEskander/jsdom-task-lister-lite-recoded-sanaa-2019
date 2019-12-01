@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
-  const input = document.getElementById('new-task-description').value;
+  const input = document.getElementById('new-task-description');
   const form = document.getElementById('create-task-form');
   const tasks = document.getElementById("tasks");
   const priority = document.getElementById('priority');
