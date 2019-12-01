@@ -18,7 +18,7 @@ form.addEventListener("onClick", function (e) {
 e.preventDefault();
 
 list(input);
-input.value = "";
+input.value = " ";
 
   });
 
