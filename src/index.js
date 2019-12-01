@@ -1,13 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
-  let input = document.getElementById("new-task-description");
-  let submit = document.getElementById("submit");
-  submit.onclick = function (e) {
-    let tasks = document.getElementById("tasks");
-    let li = document.createElement("li")
-    li.innerHTML = input.value;
-    tasks.appendChild(li);
-    e.preventDefault();
+  function addLi(input) {
+    let uList = document.getElementById('tasks');
+    let element = document.createElement('li');
+    element.innerHTML = input;
+    uList.appendChild(element);
   }
+  let a=document.body.querySelector("#create-task-form input[type='submit']")
+  a.addEventListener("click", function (e) {
+    e.preventDefault();
+    let input = document.getElementById('new-task-description').value;
+    addLi(input);
+    input.value = "";
+
+  });
 
 });
